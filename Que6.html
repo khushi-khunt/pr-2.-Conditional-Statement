@@ -1,0 +1,44 @@
+<!--five subjects Physics, Chemistry, Biology, Mathematics and Computer -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var physics = parseInt(prompt(`Enter your marks of physics:-`));
+        var chemistry = parseInt(prompt(`Enter your marks of chemistry:-`));
+        var Biology = parseInt(prompt(`Enter your marks of Biology:-`));
+        var Mathematics = parseInt(prompt(`Enter your marks of Mathematics:-`));
+        var Computer = parseInt(prompt(`Enter your marks of Computer:-`));
+
+        var total = physics + chemistry + Biology + Mathematics + Computer;
+        document.write(`<h1>total is ${total}</h1>`);
+
+        var percentage = (total / 500) * 100;
+        document.write(`<h1>percentage is ${percentage}</h1>`);
+
+        if (percentage >= 90) {
+            document.write(`<h1>A Grade</h1>`);
+        } else if (percentage >= 80 && percentage <= 90) {
+            document.write(`<h1>B Grade</h1>`);
+        } else if (percentage >= 70 && percentage <= 80) {
+            document.write(`<h1>C Grade</h1>`);
+        } else if (percentage >= 60 && percentage <= 70) {
+            document.write(`<h1>D Grade</h1>`);
+        } else if (percentage >= 50 && percentage <= 60) {
+            document.write(`<h1>E Grade</h1>`);
+        } else if (percentage >= 40) {
+            document.write(`<h1>F Grade</h1>`);
+        }
+    </script>
+
+</body>
+
+</html>
